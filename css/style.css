@@ -7,6 +7,8 @@
   --footer-contact-item: rgba(255, 255, 255, 0.6);
 }
 
+/* common */
+
 body {
   width: 1600px;
   font-family: "Roboto", sans-serif;
@@ -16,7 +18,30 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
-/* nav */
+/* service */
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* navigation */
 
 .nav {
   background-color: var(--secondary-bg-color);
@@ -25,7 +50,6 @@ body {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -34,17 +58,6 @@ body {
 
 .logo > span {
   color: var(--accent-color);
-}
-
-.logo,
-.nav-link-item,
-.contact-item {
-  text-decoration: none;
-}
-
-.nav-link,
-.contact {
-  list-style-type: none;
 }
 
 .nav-link-item,
@@ -67,19 +80,6 @@ body {
   background-color: #2f303a;
   color: var(--secondary-bg-color);
   text-align: center;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
 }
 
 .hero-title {
@@ -162,7 +162,7 @@ body {
   text-align: center;
 }
 
-.team-list-item-title {
+.team-list-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -176,10 +176,6 @@ body {
 
 /* filter */
 
-.filter-list {
-  list-style-type: none;
-}
-
 .btn-filter {
   font-family: inherit;
   font-weight: 500;
@@ -187,10 +183,6 @@ body {
   line-height: 1.62;
   text-align: center;
   background-color: #f5f4fa;
-}
-
-.cads-list-item {
-  text-decoration: none;
 }
 
 .cads-list-item > h2 {
@@ -230,15 +222,8 @@ body {
 }
 
 .footer-contact {
-  list-style: none;
   line-height: 1.71;
   font-style: normal;
-}
-
-.footer-logo,
-.footer-contact-link,
-.footer-contact-item {
-  text-decoration: none;
 }
 
 .footer-contact-link {
@@ -272,15 +257,4 @@ body {
   background-color: var(--accent-color);
   color: #f5f4fa;
   cursor: pointer;
-}
-
-.work-list,
-.advantages-list,
-.team-list,
-.filter-list,
-.cads-list {
-  /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; */
-  list-style-type: none;
 }
