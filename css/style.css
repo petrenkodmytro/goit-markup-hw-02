@@ -5,12 +5,15 @@
   --secondary-bg-color: #ffffff;
   --accent-color: #2196f3;
   --footer-contact-item: rgba(255, 255, 255, 0.6);
+  --bg-color-btn-filter: #f5f4fa;
+  --color-logo: #000000;
+  --btn-service-hover: #188ce8;
+  /* --border-cads: 1px solid #eeeeee; */
 }
 
 /* common */
 
 body {
-  width: 1600px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -53,7 +56,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--brand-color);
+  color: var(--color-logo);
 }
 
 .logo > span {
@@ -75,33 +78,21 @@ body {
 /* hero */
 
 .hero {
-  padding-top: 200px;
-  height: 600px;
-  background-color: #2f303a;
-  color: var(--secondary-bg-color);
+  background-color: var(--brand-bg-color);
   text-align: center;
 }
 
 .hero-title {
-  position: absolute;
-  width: 700px;
-  height: 120px;
-  left: 450px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--secondary-bg-color);
 }
 
 .btn-servise {
-  position: absolute;
-  width: 216px;
-  height: 50px;
-  left: 692px;
-  top: 630px;
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -111,15 +102,15 @@ body {
   letter-spacing: 0.06em;
   color: var(--secondary-bg-color);
   background: var(--accent-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .btn-servise:hover,
 .btn-servise:focus {
-  background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  background: var(--btn-service-hover);
   transition: 300ms;
-  cursor: pointer;
 }
 
 /* advantages */
@@ -148,7 +139,7 @@ body {
 /* team */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--bg-color-btn-filter);
 }
 
 .team-list-item {
@@ -182,7 +173,10 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  background-color: #f5f4fa;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+  background-color: var(--bg-color-btn-filter);
+  cursor: pointer;
 }
 
 .cads-list-item > h2 {
@@ -255,6 +249,9 @@ body {
 .btn:hover,
 .btn:focus {
   background-color: var(--accent-color);
-  color: #f5f4fa;
-  cursor: pointer;
+  color: var(--secondary-bg-color);
+}
+
+.current {
+  color: var(--accent-color);
 }
